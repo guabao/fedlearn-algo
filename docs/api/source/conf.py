@@ -83,7 +83,24 @@ html_title = f"Fedlearn-algo {release}"
 #html_favicon = "_static/favicon.ico"
 html_baseurl = "https://fedlearn-algo.readthedocs.io/en/fedlearn-algo/"
 
+html_theme_options = {
+  "logo_link": "index",
+  "github_url": "https://github.com/fedlearnAI/fedlearn-algo",
+  "collapse_navigation": True,
+  "external_links": [
+      {"name": "FedlearnAI", "url": "https://github.com/fedlearnAI"}
+      ],
+}
+
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
+html_last_updated_fmt = '%b %d, %Y'
+
+html_use_modindex = True
+html_copy_source = False
+html_domain_indices = False
+html_file_suffix = '.html'
+
+
