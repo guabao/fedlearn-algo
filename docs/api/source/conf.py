@@ -26,7 +26,7 @@ copyright = '2021, fedlearnAI'
 author = 'fedlearnAI'
 
 # The full version, including alpha/beta/rc tags
-release = 'alpha'
+release = '0.1.0-alpha'
 
 
 # -- General configuration ---------------------------------------------------
@@ -40,7 +40,6 @@ extensions = ['sphinx.ext.autodoc', 'autoapi.extension', 'sphinx.ext.coverage',
 # for autoapi
 autodoc_typehints = 'description'
 autoapi_type = 'python'
-autoapi_generate_api_docs = False
 print("Path: %s"%(os.path.abspath("conf.py")))
 autoapi_dirs = ['../../../']
 
@@ -78,7 +77,11 @@ exclude_patterns = []
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-html_theme = 'alabaster'
+html_theme = "sphinx_book_theme"
+html_title = f"Fedlearn-algo {release}"
+#html_logo = "_static/flower-logo.png"
+#html_favicon = "_static/favicon.ico"
+html_baseurl = "https://fedlearn-algo.readthedocs.io/en/fedlearn-algo/"
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
